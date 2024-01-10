@@ -170,7 +170,7 @@ void loadTexture(const char* filename, int index) {
 
     // Загрузка подготовленного текстурированного изображения в текстуру
     glTexSubImage3D(GL_TEXTURE_3D, 0, 0, 0, index, width, height, 1, GL_RGBA, GL_UNSIGNED_BYTE, texData);
-    // Удаление буфферов для освобождения памяти
+    // Удаление буферов для освобождения памяти
     delete[] data;
     delete[] texData;
 }
